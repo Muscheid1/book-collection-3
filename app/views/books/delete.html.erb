@@ -1,0 +1,7 @@
+<h1>Delete Book</h1>
+
+<p>Are you sure you want to delete the following book?: <strong><%= @book.title %></strong></p>
+<%= form_with model: @book, url: book_path(@book), method: :delete do %>
+  <%= submit_tag 'Confirm' %>
+<% end %>
+<p><%= link_to "Home", root_path %></p>
