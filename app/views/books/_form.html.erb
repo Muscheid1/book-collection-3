@@ -15,6 +15,18 @@
     <%= form.label :title %>
     <%= form.text_field :title %>
   </div>
+  <div class="field">
+    <%= form.label :author %>
+    <%= form.text_field :author %>
+  </div>
+  <div class="field">
+    <%= form.label :price %>
+    <%= form.number_field :price %>
+  </div>
+  <div class="field">
+    <%= form.label :published_date %>
+    <%= form.date_select :published_date, start_year: 1970, end_year: 2025 %>
+  </div>
 
   <div class="actions">
     <%= form.submit %>
